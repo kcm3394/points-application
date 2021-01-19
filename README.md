@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/kcm3394/points-application.svg?style=svg)](https://circleci.com/gh/kcm3394/points-application)
 # Points Application
 
 REST API for storing and updating a user's points.
