@@ -43,7 +43,7 @@ $ ./mvnw clean package -DskipTests
 $ java -jar target/points-0.0.1-SNAPSHOT.jar
 ```
 
-To shutdown the jar on a MacOS, pres `Ctrl` + `C`.
+To shutdown the jar on a MacOS, press `Ctrl` + `C`.
 
 ### Testing with Maven
 
