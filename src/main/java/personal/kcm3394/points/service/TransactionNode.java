@@ -15,12 +15,6 @@ public class TransactionNode {
         this.transactionDate = transactionDate;
     }
 
-    public TransactionNode(String payerName, int points) {
-        this.payerName = payerName;
-        this.points = points;
-        this.transactionDate = LocalDateTime.now();
-    }
-
     public TransactionNode() {}
 
     private String payerName;

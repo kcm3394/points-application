@@ -36,9 +36,4 @@ public class Timeline {
     public TransactionNode getOldestTransactionNode() {
         return head.getNext();
     }
-
-    public TransactionNode getNewestTransactionNode() {
-        return tail.getPrev();
-    }
-
 }

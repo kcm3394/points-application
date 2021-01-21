@@ -1,7 +1,11 @@
 [![CircleCI](https://circleci.com/gh/kcm3394/points-application.svg?style=svg)](https://circleci.com/gh/kcm3394/points-application)
 # Points Application
 
-REST API for storing and updating a user's points.
+REST API for storing and updating a user's points. 
+
+2 branches
+* **master**: stores transaction information in service memory
+* **mysql-implementation**: uses MySQL for data storage
 
 ## Requirements
 
@@ -85,8 +89,7 @@ $ curl http://localhost:8080/points
 Calls to `/points/add-points` require JSON data that includes `payerName`, `points`, and `transactionDate`.
 
 ```shell
-$ curl -d '{"payerName":"CABBAGE CORP","points":200,"transactionDate":"2021-01-18T20:47:02"}' 
--H 'Content-Type: application/json' http://localhost:8080/points/add-points
+$ curl -H 'Content-Type: application/json' -d '{"payerName":"CABBAGE CORP","points":200,"transactionDate":"2021-01-18T20:47:02"}' http://localhost:8080/points/add-points
 ```
 ##### Spend points
 
